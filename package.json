@@ -17,5 +17,8 @@
     "express": "^4.17.1",
     "heroku": "^7.56.1",
     "nodemailer": "^6.6.2"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
