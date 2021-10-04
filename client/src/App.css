@@ -1,0 +1,321 @@
+/* Making the site a FlexBox to help with the sticky footer */
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Making sure the "content" of the site stays above the footer at all times */
+.Site-content {
+  flex: 1;
+}
+
+/* Some whole site styling for font and the site background color */
+* {
+  font-family: nasalization, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #6093ac;
+}
+
+/* Nav bar styling */
+#Nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightslategrey;
+}
+
+/* Moving contact Nav button to the right */
+#contactLink {
+  margin-left: 30vw;
+  }
+
+/* Styling for normal buttons */
+button {
+  background-color: black;
+  color: rgb(0, 174, 255);
+  text-decoration: none;
+  height: 10vh;
+  width: 10vw;
+}
+
+/* Styling for buttons with links */
+a.button {
+  color: rgb(0, 174, 255);
+  text-decoration: none;
+  background: black;
+}
+
+/* Home page FlexBox */
+#profBox {
+display: flex;
+justify-content: center;
+margin-left: 15vw; 
+margin-right: 15vw; 
+margin-top: 10vh;
+margin-bottom: 10vh;
+}
+
+/* profile blurb */
+#blurb {
+border: 2px solid black;
+width: 25vw;
+margin-right: 5vw;
+}
+
+/* Profile Pic on Home page, making it a circle with border-radius */
+#profPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40vh;
+  width: 20vw;
+  border-radius: 50%;
+}
+
+/* Current location blurb */
+#currentLoc {
+  border: 2px solid black;
+  width: 25vw;
+}
+
+/* Image of Burlington */
+#burly {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+  width: 40vw;
+  margin-bottom: 10vh;
+}
+
+/* Hiking image on About page */
+#hike {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+  width: 40vw;
+}
+
+/* Phife picture on Hobbies page */
+#phife {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 500px
+}
+
+/* FlexBox for whole work page */
+#workPage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 5vw;
+}
+
+/* FlexBox for work history */
+#workHistory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border: solid 2px black;
+  width: 25vw;
+  margin-bottom: 20vh;
+  margin-top: none;
+  margin-right: 5vw;
+}
+
+/* Removing bottom margin on the places worked list */
+#worked {
+  margin-bottom: 0px;
+}
+
+/* Setting height of the entire resume container */
+#resume {
+height: 50vh;
+}
+
+/* Resumer header styling */
+#resHead{
+margin-bottom: 0px;
+margin-top: 5vh
+}
+
+/* Resume image link styling */
+#resumeImg {
+height: 40vh;
+width: 20vw;
+}
+
+/* Removing career goals bottom margin */
+#going {
+margin-bottom: 0px;
+}
+
+/* Styling for career goals text block */
+#goals {
+  margin-top: 0px;
+  width: 35vw;
+  border: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Container for the What I've Learned section */
+#learn {
+margin-right: 5vw;
+height: 50vh;
+}
+
+/* Removing bottom margin on What I've Learned Header */
+#learned {
+margin-bottom: 0px;
+}
+
+/* List of skills i've learned styling */
+#list{
+margin-top: 0px;
+border: solid 2px black;
+}
+
+/* Grid for the projects page to allow for more adding later */
+#projGrid {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  column-gap: 5vw;
+  justify-content: center;
+}
+
+/* Centering project page header */
+#projectHeader {
+  text-align: center;
+}
+
+/* Centering titles for individual projects */
+.projHead {
+  text-align: center;
+}
+
+/* Project thumbnail links */
+.projImg {
+  height: 40vh;
+  width: 20vw;
+}
+
+/* Individual prject descriptions */
+.projDesc {
+margin-top: 5vh;
+margin-bottom: 5vh;
+}
+
+/* Sticky footer styling */
+#footer {
+display: flex;
+bottom: 0;
+width: 100%;
+justify-content: space-around;
+background: lightslategrey
+}
+
+/* Social media icons styling */
+.socLink {
+  text-decoration: none;
+  background: lightslategrey;
+}
+
+/* Socials FlexBox with header and icons in Footer */
+#social {
+display: flex;
+flex-direction: column;
+background: lightslategrey;
+}
+
+/* Social media heading */
+#socialHead {
+  background: lightslategray;
+  margin-bottom: 5vh;
+  margin-top: 2vh;
+}
+
+/* Grid of Social media Icons */
+#socialGrid {
+  display: grid;
+  grid-template-columns: 25px 25px;
+  column-gap: 2vw;
+  row-gap: 1vh;
+  justify-content: center;
+  background: lightslategray;
+}
+
+/* Contact info in Footer */
+#contact {
+margin-top: 2vh;
+display: flex;
+flex-direction: column;
+background: lightslategrey;
+}
+
+/* Conact info contained in Footer's header */
+#conHead {
+  background: lightslategrey;
+}
+
+/* Flexbox of page links in footer */
+#basicFlex {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+ 
+}
+
+/* Links to pages in Footer */
+#basicLinks {
+text-decoration: none;
+background: lightslategrey;
+color: black
+}
+
+/* Contact form header */
+#contactPage {
+margin: 5vh;
+}
+
+/* Contact Form FlexBox */
+#formBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  justify-content: center;
+}
+
+/* Contact form name field */
+#name {
+margin-right: 5vw;
+margin-bottom: 7.5vh;
+border: 3px solid black;
+}
+
+/* Contact form email field */
+#email {
+  border: 3px solid black;
+}
+
+/* Contact form message area */
+#message {
+height: 30vh;
+width: 50vw;
+border: 3px solid black;
+}
+
+/* Contact form send button */
+#send {
+margin-top: 2vh;
+margin-bottom: 5vh;
+}
